@@ -14,10 +14,15 @@ server.set('view engine','ejs') ;
 
 
 // TEST IS OK 
-server.get('/hello',(request ,response) =>{ 
-    response.render('pages/index')
+// server.get('/hello',(request ,response) =>{ 
+//     response.render('pages/index')
     
-}) ;
+// }) ;
 
+//HOME ROUTE IS OK 
+server.get('/',(request ,response) =>{ 
+        response.render('pages/index')
+        
+    }) ;
 
 server.listen(PORT , ()=> console.log (` App listening to ${PORT}`)) ;
