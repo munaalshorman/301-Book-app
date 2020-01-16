@@ -1,3 +1,15 @@
 body{
     background: grey;
+    box-sizing: border-box;
+    text-align: center;
+
 }
+label{
+    display: block;
+}
+header{
+    background: black;
+    color: white;   
+
+}
+h

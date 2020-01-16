@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Books</title>
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/modules.css">
+    <link rel="stylesheet" href="style/layout.css">
+
+</head>
+
+<body>
+    <header>
+        <h1> Best Books!</h1>
+    </header>
+    <main>
+        <h2> Search Results </h2>
+        <% books.forEach((book)=> { %>
+        <div class="bookdetails">
+            <img src=<%=book.image_url %><br>
+            <p>Title : <%-book.title%></p>
+            <p>Author : <%-book.author %></p>
+            <p> ISBN : <%= book.isbn %></p>
+            <p>Book Description :<%= book.description%></p>
+
+        </div>
+        <% }); %>
+    </main>
+</body>
+
+</html>
